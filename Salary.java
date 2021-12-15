@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 class Employee{
 	
-	void display() {}
+	void display(int GS) {
+	    System.out.println("gross salary is "+GS);
+	}
 	void Calc(int BS,int DA,int HRA) {
 		int GS=BS+(BS*(DA/100))+(BS*(HRA/100));
-		System.out.println("gross salary is "+GS);
+		
+		display(GS);
 	}
 	
 }
